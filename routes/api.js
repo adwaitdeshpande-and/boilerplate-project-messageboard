@@ -14,7 +14,7 @@ let mongoose = require('mongoose')
 
 module.exports = function (app) {
 
-	let uri = 'mongodb+srv://user1:' + process.env.PW + '@freecodecamp.b0myq.mongodb.net/anonymous_message_board?retryWrites=true&w=majority'
+	let uri = 'mongodb+srv://adwaitdeshpandeand:' + process.env.PW + '@cluster0.vy5zzpb.mongodb.net/anonymous_message_board?retryWrites=true&w=majority'
 	mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }); 
 
 	let replySchema = new mongoose.Schema({
